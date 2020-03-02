@@ -1,0 +1,15 @@
+<package format="2">
+  <name>tunnel_ground_truth</name>
+  <version>1.0.0</version>
+  <description>
+    Survey scan data from SubT Tunnel Circuit
+  </description>
+  <maintainer email="jonathan.r.fink3.civ@mail.mil">Jon Fink</maintainer>
+  <author email="jonathan.r.fink3.civ@mail.mil">Jon Fink</author>
+  <license>None</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>pcl_ros</depend>
+
+</package>

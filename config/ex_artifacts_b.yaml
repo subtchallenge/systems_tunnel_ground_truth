@@ -1,0 +1,43 @@
+frame_id: ex
+marker_color: [0.7, 0.7, 0.0]
+artifacts:
+  - type: fire_extinguisher
+    position: [102.472, 1.66, 2.919]
+  - type: drill
+    position: [124.958, -2.697, 2.664]
+  - type: backpack
+    position: [155.029, -6.293, 2.892]
+  - type: cell_phone
+    position: [186.673, 0.526, 3.261]
+  - type: survivor
+    position: [245.165, 3.095, 3.566]
+  - type: fire_extinguisher
+    position: [313.281, -12.783, 3.247]
+  - type: cell_phone
+    position: [338.793, -5.187, 3.466]
+  - type: backpack
+    position: [282.657, -17.749, 2.993]
+  - type: fire_extinguisher
+    position: [153.806, -10.858, 2.949]
+  - type: cell_phone
+    position: [96.54, -13.376, 1.86]
+  - type: drill
+    position: [264.265, 42.821, 4.2]
+  - type: survivor
+    position: [249.228, 66.039, 4.079]
+  - type: drill
+    position: [224.181, 66.209, 4.87]
+  - type: cell_phone
+    position: [224.235, 91.403, 4.357]
+  - type: backpack
+    position: [269.117, 116.738, 4.958]
+  - type: survivor
+    position: [228.438, 105.16, 4.626]
+  - type: backpack
+    position: [189.431, 116.414, 4.467]
+  - type: fire_extinguisher
+    position: [201.308, 103.028, 4.787]
+  - type: drill
+    position: [206.645, 73.609, 4.555]
+  - type: backpack
+    position: [190.105, 47.44, 4.261]
