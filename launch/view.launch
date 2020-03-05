@@ -1,0 +1,37 @@
+<launch>
+
+  <arg name="rviz"   default="true"/>
+  <arg name="course" default="ex" doc="ex or sr"/>
+  <arg name="config" default="a"   doc="a or b"/>
+  <arg name="pcd_filename" default="$(find tunnel_ground_truth)/data/Tunnel_Circuit_LowRes_Scan_EX_Frame.pcd" />
+
+  <!-- Load Artifacts as Markers -->
+  <group if="$(eval config != '')">
+
+     <rosparam param="/ex/artifacts" file="$(find tunnel_ground_truth)/config/ex_artifacts_$(arg config).yaml" />
+     <node ns="ex" pkg="tunnel_ground_truth" type="publish_artifacts.py" name="artifact_markers" output="screen"/>
+
+     <rosparam param="/sr/artifacts" file="$(find tunnel_ground_truth)/config/sr_artifacts_$(arg config).yaml" />
+     <node ns="sr" pkg="tunnel_ground_truth" type="publish_artifacts.py" name="artifact_markers" output="screen"/>
+
+  </group>
+
+  <!-- Load Scan as Point Cloud -->
+  <node pkg="tunnel_ground_truth" type="load_pcd" name="scans_pcd" args="$(arg pcd_filename) 5.0" output="screen">
+    <param name="frame_id" value="ex"/>
+    <remap from="cloud_pcd" to="/tunnel_scans"/>
+    <param name="latch" value="true"/>
+  </node>
+
+  <node pkg="tf2_ros" type="static_transform_publisher" name="utm_to_ex"
+        args="586601.14300000 4462104.99600000 273.40500000 -2.09661182 0.00000000 -0.00000000 utm ex"/>
+
+  <node pkg="tf2_ros" type="static_transform_publisher" name="utm_to_sr"
+        args="586789.65600000 4462001.35800000 275.30800000 -2.10164855 0.00000000 -0.00000000 utm sr"/>
+
+  <node pkg="tf2_ros" type="static_transform_publisher" name="course_to_darpa"
+        args="0.0 100.0 0.0 0.0 0.0 0.0 $(arg course) darpa"/>
+
+  <node if="$(arg rviz)" pkg="rviz" type="rviz" name="rviz" output="screen" args="-d $(find tunnel_ground_truth)/launch/view_tunnel.rviz"/>
+
+</launch>
