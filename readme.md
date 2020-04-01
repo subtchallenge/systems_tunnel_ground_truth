@@ -39,4 +39,11 @@ on the */tf_static* ROS topic. These coordinate frames are defined as follows:
 
 * `utm` = a Cartesian coordinate frame, defined by UTM zone 17N
 
+### Contact Information ###
+
+If you have any questions or comments about this repository, please contact:
+
+* Ryan Halterman - ryhalt@spawar.navy.mil
+* Angela Maio - angela.c.maio.civ@mail.mil
+* SubT Challenge Mailbox - SubTChallenge@darpa.mil
 
