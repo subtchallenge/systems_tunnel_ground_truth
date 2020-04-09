@@ -6,6 +6,8 @@ This repo provides data for the DARPA Subterranean Challenge Tunnel Circuit, inc
 
 * point cloud scans of the Experimental and Safety Research mines/courses at NIOSH in Pittsburgh, Pennsylvania
 
+**Note:** Urban Circuit ground truth is available in the following repository: https://bitbucket.org/subtchallenge/urban_ground_truth/src/master/
+
 ### Files ###
 
 * Tunnel_Artifact_Ground_Truth.xlsx -- Spreadsheet listing each Artifact; its type; and x,y,z location in the relevant DARPA coordinate frame for each course (Experimental / Safety Research) and configuration (A / B).
