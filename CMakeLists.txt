@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(tunnel_ground_truth)
 
+## Compile as C++11, supported in ROS Kinetic and newer
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 set(PKG_DEPENDS
   pcl_ros
   )
