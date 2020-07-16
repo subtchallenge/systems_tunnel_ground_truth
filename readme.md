@@ -41,6 +41,22 @@ on the */tf_static* ROS topic. These coordinate frames are defined as follows:
 
 * `utm` = a Cartesian coordinate frame, defined by UTM zone 17N
 
+### Links ###
+
+* Point Cloud Flythrough
+    * Experimental: https://www.youtube.com/watch?v=VY4brRg3ifs
+    * Safety Research: https://www.youtube.com/watch?v=-qqD243S6RM
+
+* Matterport:
+    * Experimental: https://my.matterport.com/show/?m=pAG7SMh2aQg
+    * Safety Research: https://my.matterport.com/show/?m=m24cuNRitbF
+
+* Environment Preview: https://www.youtube.com/watch?v=LAziR-R-07c
+
+* High-resolution and Medium-resolution Course Point Clouds
+    * https://subt-data.s3.amazonaws.com/tunnel_scans/Tunnel_Circuit_FullRes_Scan_EX_Frame.las (20GB) 
+    * https://subt-data.s3.amazonaws.com/tunnel_scans/Tunnel_Circuit_MediumRes_Scan_EX_Frame.las (10GB)
+
 ### Contact Information ###
 
 If you have any questions or comments about this repository, please contact:
