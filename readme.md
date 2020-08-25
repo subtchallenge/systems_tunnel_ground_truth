@@ -2,9 +2,11 @@
 
 This repo provides data for the DARPA Subterranean Challenge Tunnel Circuit, including:
 
-* ground truth data for Artifact types and locations\
+* ground truth data for Artifact types and locations
 
 * point cloud scans of the Experimental and Safety Research mines/courses at NIOSH in Pittsburgh, Pennsylvania
+
+* information about the topological network structure of the course (see `network` directory)
 
 **Note:** Urban Circuit ground truth is available in the following repository: https://bitbucket.org/subtchallenge/urban_ground_truth/src/master/
 
@@ -21,6 +23,8 @@ This repo provides data for the DARPA Subterranean Challenge Tunnel Circuit, inc
 * Tunnel_Fiducials_Ground_Truth.xlsx -- Spreadsheet listing reference frame fiducials for each course and a transformation matrix for each that approximately aligns the DARPA frame with UTM.
 
 * Tunnel_Circuit_LowRes_Scan_EX_Frame.pcd -- Point cloud of the EX and SR courses, defined in the DARPA Cartesian coordinate frame for the Experimental course.
+
+* `network` -- Directory containing course topology and description.
 
 ### Course Visualization in RViz ###
 
