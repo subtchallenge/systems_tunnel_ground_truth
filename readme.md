@@ -51,9 +51,13 @@ on the */tf_static* ROS topic. These coordinate frames are defined as follows:
     * Experimental: https://www.youtube.com/watch?v=VY4brRg3ifs
     * Safety Research: https://www.youtube.com/watch?v=-qqD243S6RM
 
-* Matterport:
+* Matterport Viewer:
     * Experimental: https://my.matterport.com/show/?m=pAG7SMh2aQg
     * Safety Research: https://my.matterport.com/show/?m=m24cuNRitbF
+
+* Matterport Files:
+    * Experimental: https://subt-challenge.s3.amazonaws.com/tunnel_circuit/Tunnel_Circuit_Matterport_EX_Course.zip
+    * Safety Research: https://subt-challenge.s3.amazonaws.com/tunnel_circuit/Tunnel_Circuit_Matterport_SR_Course.zip 
 
 * Environment Preview: https://www.youtube.com/watch?v=LAziR-R-07c
 
